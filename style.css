@@ -1,0 +1,136 @@
+/*para importar fontes do google*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+#menu-h ul{
+        
+        box-sizing: border-box;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        background-color:rgb(65, 30, 121);
+        
+}
+
+/*mexer somente na listas*/
+#menu-h ul li{
+    /*manter elementos na mesma linha*/
+    display: inline;
+}
+
+#menu-h ul li a{
+
+    /*tipo de cor do txt*/
+    color: #fff;
+
+    /*sem decoração de txt*/
+    text-decoration: none;
+
+    /*espaçamento entre eles*/
+    padding: 10px;
+
+    /**/
+    display: inline-block;
+
+    font-family: 'Josefin Sans';
+
+    
+    
+    margin: 0% 3% 0% 0%;
+}
+#menu-h ul li a:hover{
+    transition: background .3s;
+    background-color: #f00303; 
+
+}
+h1{
+        color: rgb(253, 207, 0);
+        text-align: center;
+        font-size: 50px;
+        border-radius: 25.7%;
+        background: rgb(33, 129, 138);
+        margin: 1.3% 6.3% 0% 57%;
+        
+        
+                
+}
+.fundo{
+        width: 38%;
+        height: 5cm;
+        margin: -3% 0% 0% 29.5%;
+        opacity: 100%;
+        
+        
+}
+
+h2{
+    
+    margin: -6% 78.3% 0% 14%;
+
+}
+
+.principal{
+    margin: -2.2% 0% 0% 0%;
+    text-align: justify;
+    color: goldenrod;
+}
+.txt{
+    
+    text-align: left;
+    
+    margin: 1% 67.3% 0% 2%;
+    
+}
+
+.banner{
+    margin: -0.3% 8% 0% 0%;
+    width: 650px;
+    border-radius: 30%;
+    float: right;
+    inline-size: block;
+}
+
+.passiva{
+    
+    margin: 2.3% 0% 0% 3%;
+    text-align: justify;
+    color: goldenrod;
+
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1%;
+    width: 35%;
+
+}
+.video{
+    text-align: center;
+    margin: 5%;
+    padding-left: 18%;
+}
+
+.league {
+    float: left;
+    margin: 7% 5% 6% 16%;
+    
+
+}
+
+.video, .league{
+    display: inline-block;
+}
+
+.plano1
+{
+    background-image: url('katarinaplano1.jpg');
+    background-repeat: no-repeat;
+    background-position: 75% 0%;
+    background-color: black;
+    background-attachment: fixed;
+}

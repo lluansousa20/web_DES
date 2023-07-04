@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Caixa de Comentário</title>
+  <style>
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .comment-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .send-button {
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .send-button:hover {
+      background-color: blue;
+    }
+  </style>
+  <script>
+    function sendComment() {
+      var commentInput = document.getElementById('comment-input');
+      var comment = commentInput.value;
+      var selectedOption = document.querySelector('input[name="contact-option"]:checked').value;
+      
+      if (selectedOption !== 'whatsapp') {
+        selectedOption = 'whatsapp'; // Definir preferência para WhatsApp se a opção selecionada não for WhatsApp
+      }
+      
+      if (selectedOption === 'whatsapp') {
+        // Lógica para enviar o comentário pelo WhatsApp
+        console.log('Enviar pelo WhatsApp:', comment);
+      } else if (selectedOption === 'email') {
+        // Lógica para enviar o comentário por e-mail
+        console.log('Enviar por e-mail:', comment);
+      } else if (selectedOption === 'phone') {
+        // Lógica para enviar o comentário por telefone
+        console.log('Enviar por telefone:', comment);
+      }
+
+      commentInput.value = '';
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <textarea id="comment-input" class="comment-input" placeholder="Digite seu comentário"></textarea>
+    <p>Opções de contato:</p>
+    <input type="radio" name="contact-option" value="whatsapp" checked> WhatsApp
+    <input type="radio" name="contact-option" value="email"> E-mail
+    <input type="radio" name="contact-option" value="phone"> Telefone
+    <br><br>
+    <button class="send-button" onclick="sendComment()">Enviar</button>
+  </div>
+</body>
+</html>

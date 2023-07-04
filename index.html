@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>KATARINA LEGENDS</title>
+    
+    <style type="text/css">
+        body{
+            background-image: url('fundo.jpg');
+            background-repeat: no-repeat;
+            background-position: 75% 0%;
+            background-color: black;
+            background-size: auto;
+        }
+        
+    </style>
+    <style>
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .comment-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .send-button {
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .send-button:hover {
+      background-color: blue;
+    }
+    /* Adicionando pseudo-elementos */
+    .send-button::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      margin-right: 5px;
+    }
+    .send-button::after {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: yellow;
+      margin-left: 5px;
+    }
+  </style>
+  <script>
+    function sendComment() {
+      var commentInput = document.getElementById('comment-input');
+      var comment = commentInput.value;
+      var selectedOption = document.querySelector('input[name="contact-option"]:checked').value;
+      
+      if (selectedOption !== 'whatsapp') {
+        selectedOption = 'whatsapp'; // Definir preferência para WhatsApp se a opção selecionada não for WhatsApp
+      }
+      
+      if (selectedOption === 'whatsapp') {
+        // Lógica para enviar o comentário pelo WhatsApp
+        console.log('Enviar pelo WhatsApp:', comment);
+      } else if (selectedOption === 'email') {
+        // Lógica para enviar o comentário por e-mail
+        console.log('Enviar por e-mail:', comment);
+      } else if (selectedOption === 'phone') {
+        // Lógica para enviar o comentário por telefone
+        console.log('Enviar por telefone:', comment);
+      }
+
+      commentInput.value = '';
+    }
+  </script>
+ 
+</head>
+
+<body id="corpo">   
+        <nav id="menu-h">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            
+            <li><a href="historia.html">HISTORIA</a></li>
+            
+            <li><a href="https://www.leagueoflegends.com/pt-br/">JOGUE LOL</a></li>
+            
+            <li><a href="#">MOTIVOS PARA JOGAR</a></li>
+        </ul>
+        </nav>
+
+        <br>
+        <div class="fundo_dificil">
+        <h1>
+            KATARINA LEGENDS       
+        <h1>
+        </div>
+        <img class="banner" src="banner.jpg">
+        <br>
+        <div class="principal">
+        <h2>Apresentação</h2>
+        <div>
+        <p class="txt"> Katarina é uma campeã assassina com alto poder de burst no LoL (League of Legends).<br> 
+            Ou seja, ela tem a capacidade de eliminar inimigos rapidamente. Entretanto, é<br>
+            preciso um pouco de cuidado ao entrar em team fights e usar as habilidades. Confira<br> 
+            algumas dicas de como jogar com a Katarina no LoL, quem são seus counters e a build recomendada.</p>
+
+        <p class="txt">Katarina é um personagem de alta mobilidade, por conta do seu kit de habilidades.<br> 
+            Mas, ainda assim, é importante prestar atenção nas ordens de fazer cada coisa para<br> 
+            não desperdiçar recursos e ficar sem nada quando precisar escapar.</p>
+
+        <p class="txt">A passiva da Katarina faz com que ela cause dano em área ao apanhar uma adaga,<br> 
+           é a partir dessa habilidade que as jogadas para ela devem ser criadas:</p>
+    
+    <div class="passiva">
+        
+        <ul>
+                <li class="info_passiva">Use o Q (Lâmina Saltitante) para farmar os minions. A adaga sempre caí do lado oposto ao que acertou o inimigo, tente usar isso para criar jogadas, é a principal forma de amplificar o dano causado;</li>
+                <br>
+
+                <li class="info_passiva">Se uma adaga estiver no chão perto do inimigo, é aí que você deve aproveitar a chance: use o E (Shunpo) para pular na adaga e chegar causando dano.</li>
+                <br>
+
+                <li class="info_passiva">Imediatamente jogue o W (Preparação) no mesmo local, assim outra adaga irá cair no chão, repetindo o dano.</li>
+                <br>
+
+                <li class="info_passiva">Lembre-se que quando Katarina pega uma adaga, o tempo de recarda do E (Shunpo) é resetado, isso permite que você pule até o inimigo de novo, se necessário ou saia da luta.</li>
+                <br>
+
+        </ul>   
+                
+        </div>
+
+        <section class="video">
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SUSLcu6b1aM?start=268" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </section>
+
+        <img class="league" src="league.jpg">
+
+    <div class="pezinho">
+        <footer>
+             
+        </footer>
+    </div>
+
+    <div class="container">
+    <textarea id="comment-input" class="comment-input" placeholder="Digite seu comentário"></textarea>
+    <p>Opções de contato:</p>
+    <input type="radio" name="contact-option" value="whatsapp" checked> WhatsApp
+    <input type="radio" name="contact-option" value="email"> E-mail
+    <input type="radio" name="contact-option" value="phone"> Telefone
+    <br><br>
+    <button class="send-button" onclick="sendComment()">Enviar</button>
+  </div>
+
+  <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.4447062627514!2d-118.46002382380046!3d34.032461973164395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb147c58ab95%3A0xd27aa3a914d492b4!2sRiot%20Games%20Inc.!5e0!3m2!1spt-BR!2sbr!4v1688490017660!5m2!1spt-BR!2sbr" width="600" height="450" style="border: 15px; ; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<style type="text/css">
+    .mapa {
+        border-radius: 20%;
+        
+        opacity: 0.7;
+        text-align: center;
+        box-shadow: 1px 20px 20px 15px #FF0000;
+    }
+</style>
+
+
+
+
+</body>
+</html>
